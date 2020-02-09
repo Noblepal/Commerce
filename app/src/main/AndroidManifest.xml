@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.retailboosters">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeaction"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.retailboosters.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".RegisterFormsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".IncorrectDetatilsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".OfferLatterWebviewActivity"
+            android:label="Documents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DocumentActivity"
+            android:label="Documents"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Payment"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".MandateOtpActivity"
+            android:label="Payment"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AppSubmitedActivity"
+            android:label="AppSubmited"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+</manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/listTitleLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:layout_below="@+id/daysLayout"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        >
+
+        <TextView
+            android:id="@+id/dfd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Due Date"
+            android:textColor="@color/white"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/dsdffd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="To Pay"
+            android:textColor="@color/white"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/dfwerd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Balance"
+            android:textColor="@color/white"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30" >
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/employment"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/employment_status"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/empStatusET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Where do you work"
+                    android:textColor="@color/dark_gray" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/deptET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+                </AutoCompleteTextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textVieew2363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Enter your company Name"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/companyNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Company Address"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/offAddET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViqqeew2363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Company HR Contact Phone Number"
+                    android:textColor="@color/dark_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+234"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/sp_12"
+                        />
+                    <EditText
+                        android:id="@+id/offNumberET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:maxLength="11"
+                        android:layout_marginLeft="2dp"
+                        android:background="#00000000"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/sp_12" >
+
+                    </EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+         
+         
+         
+         
+         
+
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView223363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Company HR Email"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/offEmailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         
+         
+         
+
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te2xtView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/time_at_org"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/timeOrgaTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te2xdsaftView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Employment Term"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/empTermTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text232View223363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Net Monthly Salary"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/netSalaryET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+
+         
+         
+         
+         
+         
+
+         
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="@dimen/dp_50">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/next_button"
+                android:onClick="onClickConfirm" />
+        </RelativeLayout>
+         
+    </LinearLayout>
+
+</ScrollView>

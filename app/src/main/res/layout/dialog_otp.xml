@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textSize="@dimen/sp_24"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check your messages for security code and enter it below."
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        android:textColor="@color/dark_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <EditText
+        android:id="@+id/passwordEditext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/passValidView"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:layout_margin="@dimen/dp_20"
+        android:singleLine="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sp_16" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:onClick="onClickConfirm"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/confirm_button"/>
+
+    <TextView
+        android:id="@+id/resendTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45"
+        android:text="Resend OTP"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"/>
+</LinearLayout>

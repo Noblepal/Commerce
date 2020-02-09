@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30" >
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/loan_info"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/owning_orga"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/ownOrgaEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/ifYesLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/if_yes"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/ifYesEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text2View72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/when_was"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/whenWasEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        
+         
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tenor"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/tenorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/outstanding"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/outstandingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:inputType="numberDecimal"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te3xt2View72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/have_you_missed"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/havUMissedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/missingReLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te3xte2View72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/resoan_repayment"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/reasonForMisEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+        
+         
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te3xte42View72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/any_other"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/anyOtherTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/ifYesIncomeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te3xte442View72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/from_where"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/fromWhereEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+        
+         
+         
+         
+         
+         
+         <LinearLayout
+             android:id="@+id/howmuchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:visibility="gone"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textrView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/how_much"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/howMuchTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text4View215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/emp_term"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/empTermEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+             android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textr3View23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tenor_contract"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/tenorEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text34View215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/contract_ending"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/conEndEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:visibility="gone"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te3xt2Viedw72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/item_purchase"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/itemOfPurTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:visibility="gone"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/texetr3View23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/value"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/valueTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/down_arrow_gray"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/teext34View215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/contribution"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/contributionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:visibility="gone"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/te3xt2Veiedw72363"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/tenor_credit"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/creditPayEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+         
+         
+         
+         
+         
+         
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/texetrr3View23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="ACCOUNT DETAILS FOR REPAYMENT"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/accDetailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/teext34Vriew215"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="10dp"
+                android:text="@string/bank"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/bankTextView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/down_arrow_gray"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/teext3334Vriew215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Account Name"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/acNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+                </EditText>
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/texetreer3View23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Account Number"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/repaymentAccEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/teesxt34Vriew215"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/dp_10"
+                     android:layout_marginTop="10dp"
+                     android:text="Other Account"
+                     android:textColor="@color/dark_gray" />
+
+                 <TextView
+                     android:id="@+id/otherBankTextView"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/dp_30"
+                     android:layout_marginTop="5dp"
+                     android:background="@drawable/rounded_edit_text"
+                     android:paddingLeft="10dp"
+                     android:paddingRight="10dp"
+                     android:singleLine="true"
+                     android:gravity="center_vertical"
+                     android:drawableRight="@drawable/down_arrow_gray"
+                     android:textColor="@color/dark_gray"
+                     android:textSize="@dimen/sp_12" >
+                 </TextView>
+             </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/teesxt3ere4Vriew215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Account Name"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/otherAccNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+                </EditText>
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/texeeestrr3View23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:text="Account Number"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/otherAccNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" >
+
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+         
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="@dimen/dp_50">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/next_button"
+                android:onClick="onClickConfirm" />
+        </RelativeLayout>
+         
+         
+    </LinearLayout>
+
+</ScrollView>

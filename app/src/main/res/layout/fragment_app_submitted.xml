@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/ok_icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="Application Submitted"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/product_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/buyAgainTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:padding="5dp"
+            android:text="Buy Again"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:text="What&apos;s Next?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/loanStatusTv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:text="Loan Status"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:layout_weight="0.5" />
+        
+        <TextView
+            android:id="@+id/reSchduleTv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:text="Repayment Schedule"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/TraHistoryTv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:text="Transaction History"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:layout_weight="0.5" />
+        
+        <TextView
+            android:id="@+id/loanHistoryTv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:text="Loan History"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/paymentTv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:text="Payment"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:layout_weight="0.5" />
+        
+        <TextView
+            android:id="@+id/accountTv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:text="Account"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+    
+</LinearLayout>

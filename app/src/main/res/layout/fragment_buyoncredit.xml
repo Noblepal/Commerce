@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20" >
+
+        <TextView
+            android:id="@+id/almostTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jonathan, Welcome to Retail Booster"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="Buy now, Pay later."
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product_bg" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_horizontal"
+            android:text="Buy now, Pay later."
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_20" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/dp_10" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="Image"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_type_bg"
+                    android:layout_marginLeft="@dimen/dp_10" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="Item Name"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <EditText
+                android:id="@+id/pNameEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="iPhone X"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="Store Name"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <EditText
+                android:id="@+id/storeNameEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="Apple"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="Store Address"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <EditText
+                android:id="@+id/storeAddEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:enabled="false"
+                android:text="Glover Street"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="URL"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <EditText
+                android:id="@+id/storeUrlEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:enabled="false"
+                android:text="https://www.apple.ng"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" >
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact Number"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/sp_12" />
+
+                    <EditText
+                        android:id="@+id/conNumEdittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="0223654654"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" >
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/sp_12" />
+
+                    <EditText
+                        android:id="@+id/qtyEdittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textVdiew2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="10dp"
+                        android:text="Unit Price"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/sp_12" />
+
+                    <EditText
+                        android:id="@+id/unitPriceEditext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="700,000"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" >
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tedxtView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Amount"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/sp_12" />
+
+                    <EditText
+                        android:id="@+id/totalAmtEdittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="700,000"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/buy_button"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

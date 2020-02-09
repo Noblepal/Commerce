@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/background" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/productImageView">
+
+            <TextView
+                android:id="@+id/pNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPhone XS Max"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/pNameTextView"
+                android:gravity="end"
+                android:text="Price" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pNameTextView"
+                android:layout_marginTop="10dp"
+                android:text="Offers" />
+
+            <TextView
+                android:id="@+id/offerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pNameTextView"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/TextView01"
+                android:gravity="end"
+                android:text="N200,000.00" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextView01"
+                android:layout_marginTop="10dp"
+                android:text="Balance Paid" />
+
+            <TextView
+                android:id="@+id/paidTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offerTextView"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/TextView03"
+                android:gravity="end"
+                android:text="N200,000.00" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextView03"
+                android:layout_marginTop="10dp"
+                android:text="Repayment" />
+
+            <TextView
+                android:id="@+id/repaymentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextView03"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/TextView03"
+                android:gravity="end"
+                android:text="N200,000.00" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#cfcfcf" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_transparent"
+            android:clickable="false"
+            android:drawableStart="@drawable/gray_circle"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="   BVN Validation"
+            android:textAllCaps="false"
+            android:textColor="#9F9F9F" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_transparent"
+            android:backgroundTint="#fff"
+            android:clickable="false"
+            android:drawableStart="@drawable/check_red"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="     Application Submitted"
+            android:textAllCaps="false"
+            android:textColor="#da231b" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_transparent"
+            android:backgroundTint="#fff"
+            android:clickable="false"
+            android:drawableStart="@drawable/check_red"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="     Bank Statement and Salary Analysis"
+            android:textAllCaps="false"
+            android:textColor="#da231b" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_transparent"
+            android:clickable="false"
+            android:drawableStart="@drawable/gray_circle"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="   Approval"
+            android:textAllCaps="false"
+            android:textColor="#9F9F9F" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_transparent"
+            android:clickable="false"
+            android:drawableStart="@drawable/gray_circle"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="   Delivery"
+            android:textAllCaps="false"
+            android:textColor="#9F9F9F" />
+    </LinearLayout>
+
+
+</RelativeLayout>

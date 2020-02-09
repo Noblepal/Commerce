@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_20">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Document"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/dark_gray"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_24"/>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/idLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_15"
+            android:text="Goverment Id"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/idButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="Edit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/licenceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_15"
+            android:text="Internatinal Passport Or Driving License"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:layout_toLeftOf="@+id/photoButton"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/photoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="Edit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"/>
+    <RelativeLayout
+        android:id="@+id/billLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/changePassTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_15"
+            android:text="Utility Bill"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/billButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_20"
+            android:text="Edit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"/>
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/light_gray"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="Submit" />
+</LinearLayout>

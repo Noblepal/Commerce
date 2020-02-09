@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/almostTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="Almost there, Jonathan"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/TextV36iew01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Product"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/light_gray"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10" >
+
+            <ImageView
+                android:id="@+id/productImageView"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abc_ab_share_pack_mtrl_alpha" />
+
+            <TextView
+                android:id="@+id/pNameEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/productImageView"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/productImageView"
+                android:text="iPhone xs"
+                android:layout_toLeftOf="@+id/priceTextView"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pNameEdittext"
+                android:layout_alignBottom="@+id/pNameEdittext"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="N 850000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/memoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pNameEdittext"
+                android:layout_below="@+id/pNameEdittext"
+                android:layout_marginTop="5dp"
+                android:text="64GB"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/colorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/memoryTextView"
+                android:layout_below="@+id/memoryTextView"
+                android:layout_marginTop="5dp"
+                android:text="Black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/urlTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/colorTextView"
+                android:layout_below="@+id/colorTextView"
+                android:layout_marginTop="5dp"
+                android:text="https://www.apple.com/iphone-x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="Where do you work?"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_12" />
+
+        <AutoCompleteTextView
+            android:id="@+id/whereWorkEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableRight="@drawable/down_arrow_gray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_12" >
+        </AutoCompleteTextView  >
+
+        <LinearLayout
+            android:id="@+id/cantFindCpyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_40"
+            android:paddingRight="@dimen/dp_20" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_circle" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Can&apos;t find your company here?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/empIdLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Employee ID"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_12" />
+
+        <EditText
+            android:id="@+id/empIdEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/bankTextView"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_30"
+                android:text="Select Bank"
+                android:gravity="center"
+                android:background="@drawable/rounded_edit_text"
+                android:drawableRight="@drawable/down_arrow_gray"
+                android:drawablePadding="@dimen/dp_10"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingRight="10dp"
+                />
+            <ImageView
+                android:id="@+id/bankStmtImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:visibility="visible"
+                android:src="@drawable/bank_stat_bg" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/proofIdImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="visible"
+            android:src="@drawable/prof_bg" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/salaryTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary History"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"/>
+            <ListView
+                android:id="@+id/salaryListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+
+            </ListView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_50" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/next_button" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

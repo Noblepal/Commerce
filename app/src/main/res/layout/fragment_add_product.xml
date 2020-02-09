@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_20"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_100"
+        android:src="@drawable/image_icon"/>
+
+
+    <EditText
+        android:id="@+id/pNameEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/emailValidView"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:hint="Product Name"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/priceEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:hint="Price"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_10">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/vatEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:visibility="gone"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:hint="Vat"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_10">
+
+    </EditText>
+    <EditText
+        android:id="@+id/shippingFeeEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:hint="Shipping Fee"
+        android:inputType="numberDecimal"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_10">
+
+    </EditText>
+    <EditText
+        android:id="@+id/descEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:hint="Product Description"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_10">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/confirm_button"
+        />
+
+</LinearLayout>

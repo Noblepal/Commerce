@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/almostTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="Almost there, Jonathan"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/TextV36iew01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Product"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/light_gray"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10" >
+
+            <ImageView
+                android:id="@+id/productImageView"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@drawable/abc_ab_share_pack_mtrl_alpha" />
+
+            <TextView
+                android:id="@+id/pNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/productImageView"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/productImageView"
+                android:text="iPhone xs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="N 850000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/descTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pNameTextView"
+                android:layout_below="@+id/pNameTextView"
+                android:layout_marginTop="5dp"
+                android:text="64GB"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/qtyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descTextView"
+                android:layout_below="@+id/descTextView"
+                android:layout_marginTop="5dp"
+                android:text="Black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/pUrlTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/qtyTextView"
+                android:layout_below="@+id/qtyTextView"
+                android:layout_marginTop="5dp"
+                android:text="https://www.apple.com/iphone-x"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="Delivery Address"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_12" />
+
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Loan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8" >
+
+            <TextView
+                android:id="@+id/shipFeeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="N 2000"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Shipping Fee"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8" >
+
+            <TextView
+                android:id="@+id/subTotalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="N 852,000"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Subtotal"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8" >
+
+            <TextView
+                android:id="@+id/vatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="N 852,000"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextView083"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="VAT"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8" >
+
+            <TextView
+                android:id="@+id/adminFeeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="N 852,000"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextViesdfw083"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Admin Fee"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8" >
+
+            <TextView
+                android:id="@+id/totalCostTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="N 852,000"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextVisdfaesdfw083"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Total Cost"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8" >
+
+            <TextView
+                android:id="@+id/tenureTextView"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_25"
+                android:background="@drawable/rounded_edit_text"
+                android:drawableRight="@drawable/down_arrow_gray"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="1 Year"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Repayment Period"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/offerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="N 0"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TexdtView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Offer Amount"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <TextView
+                android:id="@+id/balancePaidTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="N 0"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TexsadtView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Balance to be paid"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_8" >
+
+            <TextView
+                android:id="@+id/repaymentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="View"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/red_border_rect_drawable"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/TextVdiew11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Repayment Schedule"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/lessAmtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_40"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_20" >
+
+            <ImageView
+                android:id="@+id/checkImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_circle"
+                />
+
+            <TextView
+                android:id="@+id/lessAmtTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The loan offered is less than the total. \nPay the difference to continue? "
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_20" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pnow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

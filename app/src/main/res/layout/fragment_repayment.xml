@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/orderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="Select Order"
+        android:drawableRight="@drawable/down_arrow_gray"
+        android:drawablePadding="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:layout_below="@+id/orderTextView"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amounted Loaned"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_8" />
+
+            <TextView
+                android:id="@+id/amountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="852,000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textVdiew1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenure"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_8" />
+
+            <TextView
+                android:id="@+id/tenureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="11 months"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tedxtView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_8" />
+
+            <TextView
+                android:id="@+id/intrestTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="59,000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/daysLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:background="@color/light_gray"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Payment is in"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/daysTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 Days"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18" />
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listTitleLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:layout_below="@+id/daysLayout"
+        android:layout_marginTop="@dimen/dp_10"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        >
+
+        <TextView
+            android:id="@+id/dfd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Due Date"
+            android:textColor="@color/black"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/dsdffd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="To Pay"
+            android:textColor="@color/black"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/dfwerd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Balance"
+            android:textColor="@color/black"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/schduleListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listTitleLl"
+        android:divider="@color/white"
+        android:dividerHeight="1dp">
+
+
+    </ListView>
+</RelativeLayout>
