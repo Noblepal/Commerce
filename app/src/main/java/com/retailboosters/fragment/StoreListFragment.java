@@ -6,16 +6,17 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.retailboosters.R;
+import com.retailboosters.adapter.ProductListRecyclerViewAdapter;
 import com.retailboosters.adapter.StoreListAdapter;
 import com.retailboosters.adapter.StoreListRecyclerViewAdapter;
 import com.retailboosters.response.GetProductByStoreResponse;
@@ -27,19 +28,22 @@ public class StoreListFragment extends Fragment implements OnApiResponse {
     FragmentManager fragmentManager;
     //private ListView mStoreListView;
     private StoreListAdapter mArrayAdapter;
-    RecyclerView topRecyclerView;
+    RecyclerView productsRecyclerView, storesRecyclerView;
     ViewPager viewPager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_store_list, container, false);
+        View rootView = inflater.inflate(R.layout.product_list_header, container, false);
         fragmentManager = getActivity().getSupportFragmentManager();
-        //mStoreListView = (ListView) rootView.findViewById(R.id.storeListView);
 
-        topRecyclerView = rootView.findViewById(R.id.recyclerView1);
-        LinearLayoutManager mManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
-        topRecyclerView.setLayoutManager(mManager);
+        productsRecyclerView = rootView.findViewById(R.id.recyclerViewProducts);
+        storesRecyclerView = rootView.findViewById(R.id.recyclerViewStores);
+        LinearLayoutManager pManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager sManager = new GridLayoutManager(getActivity(), 2);
+
+        productsRecyclerView.setLayoutManager(pManager);
+        storesRecyclerView.setLayoutManager(sManager);
 
         getActivity().setTitle("Stores");
 
@@ -51,10 +55,10 @@ public class StoreListFragment extends Fragment implements OnApiResponse {
     }
 
 
-    public void onListClick(int position) {
+    public void onListClick(GetStoreResponse.Datum store) {
 
         Bundle bundle = new Bundle();
-        bundle.putSerializable("store", mArrayAdapter.getItem(position));
+        bundle.putSerializable("store", store);
         ProductListFragment fragment = new ProductListFragment();
         fragment.setArguments(bundle);
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -92,31 +96,32 @@ public class StoreListFragment extends Fragment implements OnApiResponse {
                         GetProductByStoreResponse.class);
 
                 if (getProductByStoreResponse.getData().size() > 0) {
-                    View headerView = LayoutInflater.from(getActivity()).inflate(R.layout.product_list_header, null, false);
+                    parseProductsData(response);
+                    //View headerView = LayoutInflater.from(getActivity()).inflate(R.layout.product_list_header, null, false);
                     //viewPager = (ViewPager) headerView.findViewById(R.id.viewpager);
                     //viewPager.setAdapter(new CustomPagerAdapter(getActivity(), getProductByStoreResponse.getData(), StoreListFragment.this));
                     //mStoreListView.addHeaderView(headerView);
 
 
-                    updateTimer();
+                    //updateTimer();
                 }
 
             } else {
-                parseData(response);
+                parseStoresData(response);
             }
         }
     }
 
-    public void onClickProduct(String id, GetProductByStoreResponse.Datum product) {
+    public void onClickProduct(GetProductByStoreResponse.Datum product) {
         Bundle bundle = new Bundle();
 
-        for (int i = 0; i < mArrayAdapter.getCount(); i++) {
+        /*for (int i = 0; i < mArrayAdapter.getCount(); i++) {
             if (mArrayAdapter.getItem(i).getId().equals(id)) {
                 bundle.putSerializable("store", mArrayAdapter.getItem(i));
                 return;
 
             }
-        }
+        }*/
         bundle.putSerializable("product", product);
 
         BuyOnCreditFragment fragment = new BuyOnCreditFragment();
@@ -156,7 +161,7 @@ public class StoreListFragment extends Fragment implements OnApiResponse {
 
     }
 
-    private void parseData(String resString) {
+    private void parseStoresData(String resString) {
 
         GsonBuilder gsonb = new GsonBuilder();
         Gson gson = gsonb.create();
@@ -164,16 +169,41 @@ public class StoreListFragment extends Fragment implements OnApiResponse {
         GetStoreResponse getStoreResponse = gson.fromJson(resString,
                 GetStoreResponse.class);
 
+
         if (getStoreResponse.getStatus() && getActivity() != null) {
 
-            topRecyclerView.setAdapter(new StoreListRecyclerViewAdapter(getActivity(),
+            storesRecyclerView.setAdapter(new StoreListRecyclerViewAdapter(getActivity(),
                     getStoreResponse.getData(), StoreListFragment.this));
-            mArrayAdapter = new StoreListAdapter(getActivity(), getStoreResponse.getData(), StoreListFragment.this);
+            //mArrayAdapter = new StoreListAdapter(getActivity(), getStoreResponse.getData(), StoreListFragment.this);
             //mStoreListView.setAdapter(mArrayAdapter);
 
         } else {
             if (getActivity() != null) {
                 new Utils().showErrorDialog(getActivity(), "Failed to load stores");
+            }
+        }
+
+    }
+
+    private void parseProductsData(String resString) {
+
+        GsonBuilder gsonb = new GsonBuilder();
+        Gson gson = gsonb.create();
+
+        GetProductByStoreResponse getStoreResponse = gson.fromJson(resString,
+                GetProductByStoreResponse.class);
+
+
+        if (getStoreResponse.getStatus() && getActivity() != null) {
+
+            productsRecyclerView.setAdapter(new ProductListRecyclerViewAdapter(getActivity(),
+                    getStoreResponse.getData(), StoreListFragment.this));
+            //mArrayAdapter = new StoreListAdapter(getActivity(), getStoreResponse.getData(), StoreListFragment.this);
+            //mStoreListView.setAdapter(mArrayAdapter);
+
+        } else {
+            if (getActivity() != null) {
+                new Utils().showErrorDialog(getActivity(), "Failed to load products");
             }
         }
 

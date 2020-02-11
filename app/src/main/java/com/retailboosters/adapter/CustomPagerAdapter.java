@@ -54,12 +54,12 @@ public class CustomPagerAdapter extends PagerAdapter {
         Glide.with(mContext).load(featureArrayList.get(position).getProductImage()).into(thumb);
 
 
-        layout.setOnClickListener(new View.OnClickListener() {
+        /*layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mStoreListFragment.onClickProduct(featureArrayList.get(position).getId(), featureArrayList.get(position));
             }
-        });
+        });*/
 
         return layout;
     }

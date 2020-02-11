@@ -83,12 +83,12 @@ public class StoreListAdapter extends ArrayAdapter<GetStoreResponse.Datum> {
                 .into(viewHolder.image);
 
 
-        viewHolder.rootLayout.setOnClickListener(new View.OnClickListener() {
+        /*viewHolder.rootLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mStoreListFragment.onListClick(position);
             }
-        });
+        });*/
         return convertView;
     }
 
